@@ -1,2 +1,2 @@
 # Again
-Lie to yourself: Study make you happy : (
+Lie : Study makes me happy : (
