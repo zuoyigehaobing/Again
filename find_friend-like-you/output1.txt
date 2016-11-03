@@ -1,0 +1,52 @@
+Script started on Tue Oct 25 21:11:27 2016
+[?1034hbash-3.2$ make clean
+rm test1 test2 categorizer
+bash-3.2$ make cate
+gcc -Wall -std=c99 qtree.c questions.c categorizer.c -o categorizer
+bash-3.2$ ./categorizer short
+----------------------------------------------
+Friend recommender system. Find people who are just like you!
+CSC209 fall 2016 team. All rights reserved
+----------------------------------------------
+Please enter your name. Type 'q' to quit
+!@#@$&%&#$^%@
+Invalid user name, please enter another one: 
+shan
+Invalid length, please enter another one: 
+01234567890123456789012345678901234567890123456789012345678900 12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890
+Invalid length, please enter another one: 
+shanbingzhao
+Do you like Tattoos? (y/n)
+q
+Tattoos type:0
+	Reality TV type:0
+		Justin Bieber type:0
+			Bill Gates type:1
+				NULL
+				NULL
+			Bill Gates type:1
+				NULL
+				NULL
+		Justin Bieber type:0
+			Bill Gates type:1
+				NULL
+				NULL
+			Bill Gates type:1
+				NULL
+				NULL
+	Reality TV type:0
+		Justin Bieber type:0
+			Bill Gates type:1
+				NULL
+				NULL
+			Bill Gates type:1
+				NULL
+				NULL
+		Justin Bieber type:0
+			Bill Gates type:1
+				NULL
+				NULL
+			Bill Gates type:1
+				NULL
+				NULL
+bash-3.2$ 
