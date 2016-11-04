@@ -1,1 +1,4 @@
 A1/bin/*
+.metadata
+.classpath
+.project
