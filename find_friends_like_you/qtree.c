@@ -57,26 +57,9 @@ void print_users (Node *parent) {
 }
 
 
-// still no ideal what this function is used for
-// T1: helper function to free the question tree
-void traversal(QNode * current){
-    
-    if(current->node_type == LEAF){
-        printf("I am leaf \n");
-        return;
-    }
-    
-    traversal(current->children[0].qchild);
-    // do something to itself
-    traversal(current->children[1].qchild);
-    
-}
 
 
-
-
-
-
+// traverse a tree to add user to leaves
 
 void add_user_to_leaves(char * username,char * answer,QNode *root){
     
@@ -145,6 +128,8 @@ void add_user_to_leaves(char * username,char * answer,QNode *root){
     
 }
 
+
+// traverse the tree to search a user
 
 Node * search(char * username, QNode * root){
     Node * head = NULL;
@@ -217,6 +202,26 @@ void free_tree(QNode * root){
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

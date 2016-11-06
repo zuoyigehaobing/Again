@@ -23,7 +23,6 @@ void print_qtree (QNode *parent, int level);
 void print_users (Node *parent);
 
 //shan
-void traversal(QNode * current);
 void add_user_to_leaves(char * username,char *answer,QNode * root);
 Node * search(char * username, QNode * root);
 void free_tree(QNode * root);
