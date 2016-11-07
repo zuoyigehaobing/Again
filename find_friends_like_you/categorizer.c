@@ -91,16 +91,17 @@ int enter_username(char * username,QNode * root){
     
     // enter the username
     printf("Please enter your name. Type 'q' to quit\n");
-    scanf("\n%255[^\n]",username);
+    fgets(username,MAX_LINE,stdin);
     username[strcspn(username,"\r\n")] = '\0';
     int check_username = validate_username(username,root);
-    // if the user is invalid , go into the loop
+    
+     // if the user is invalid , go into the loop
     while(check_username != 0){
         
         if(check_username == 999){
             return 1;
         }
-        scanf("\n%255[^\n]",username);
+        fgets(username,MAX_LINE,stdin);
         username[strcspn(username,"\r\n")] = '\0';
         check_username = validate_username(username,root);
     }
@@ -155,7 +156,7 @@ int answer_question(char *answer,QNode *root){
     
     while (curr != NULL) {
         printf("Do you like %s? (y/n)\n",curr->question);
-        scanf("%s",my_answer);
+        fgets(my_answer,MAX_LINE,stdin);
         my_answer[strcspn(my_answer,"\r\n")] = '\0';
         
         valid_answer = check_and_collect_answer(my_answer,answer,curr,level);

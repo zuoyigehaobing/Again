@@ -13,6 +13,7 @@ Node * get_list_from_file (char *input_file_name) {
     my_file = fopen(input_file_name,"r");
     if(my_file == NULL){
         fprintf(stderr,"Error opening file \n");
+	exit(0);
     }
     
     //STEP 2: loop over the file line by line
@@ -34,6 +35,7 @@ Node * get_list_from_file (char *input_file_name) {
             curr = curr->next;
         }
     }
+    fclose(my_file);	
     curr->next = NULL;
 	return head;
 }
@@ -56,6 +58,7 @@ void free_list (Node *head) {
         free(old->str);
         free(old);
     }
+    head = NULL;
 }
 
 
@@ -65,7 +68,4 @@ Node * one_node(char*line){
     strcpy(n->str,line);
     return n;
 }
-
-
-
 

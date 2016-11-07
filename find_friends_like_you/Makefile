@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -std=c99
+CFLAGS = -Wall -g -std=c99
 
 
 all: questions binary_tree cate
