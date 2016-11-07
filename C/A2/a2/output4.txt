@@ -1,0 +1,79 @@
+Script started on Tue Oct 25 21:23:41 2016
+[?1034hbash-3.2$ make clean
+rm test1 test2 categorizer
+bash-3.2$ make cate
+gcc -Wall -std=c99 qtree.c questions.c categorizer.c -o categorizer
+bash-3.2$ ./categorizer sjo[K[Khort
+----------------------------------------------
+Friend recommender system. Find people who are just like you!
+CSC209 fall 2016 team. All rights reserved
+----------------------------------------------
+Please enter your name. Type 'q' to quit
+Shanbin   bingzhao
+Do you like Tattoos? (y/n)
+n
+Do you like Reality TV? (y/n)
+n
+Do you like Justin Bieber? (y/n)
+n
+Do you like Bill Gates? (y/n)
+n
+Sorry, no user with similar interests joined yet
+
+----------------------------------------------
+Friend recommender system. Find people who are just like you!
+CSC209 fall 2016 team. All rights reserved
+----------------------------------------------
+Please enter your name. Type 'q' to quit
+Yuemaosong
+Do you like Tattoos? (y/n)
+n
+Do you like Reality TV? (y/n)
+n
+Do you like Justin Bieber? (y/n)
+n
+Do you like Bill Gates? (y/n)
+n
+Friends recommendations for user : Yuemaosong
+Shanbingzhao
+
+----------------------------------------------
+Friend recommender system. Find people who are just like you!
+CSC209 fall 2016 team. All rights reserved
+----------------------------------------------
+Please enter your name. Type 'q' to quit
+q
+Quiting ...
+Tattoos type:0
+	Reality TV type:0
+		Justin Bieber type:0
+			Bill Gates type:1
+				Yuemaosong, Shanbingzhao, 
+				NULL
+			Bill Gates type:1
+				NULL
+				NULL
+		Justin Bieber type:0
+			Bill Gates type:1
+				NULL
+				NULL
+			Bill Gates type:1
+				NULL
+				NULL
+	Reality TV type:0
+		Justin Bieber type:0
+			Bill Gates type:1
+				NULL
+				NULL
+			Bill Gates type:1
+				NULL
+				NULL
+		Justin Bieber type:0
+			Bill Gates type:1
+				NULL
+				NULL
+			Bill Gates type:1
+				NULL
+				NULL
+bash-3.2$ 
+bash-3.2$ 
