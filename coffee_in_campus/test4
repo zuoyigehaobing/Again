@@ -1,2 +1,0 @@
-#!/bin/bash
-(cat testinput2.csv; tail -n +2 testinput3.csv ; cat testinput1.csv) | dos2unix | ./csv2js > data.js

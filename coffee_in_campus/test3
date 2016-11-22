@@ -1,2 +1,0 @@
-#!/bin/bash
-tail -n +2 testinput3.csv | dos2unix | (gcc -Wall -o csv2js csv2js.c && ./csv2js) > data.js

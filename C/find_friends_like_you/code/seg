@@ -1,0 +1,4 @@
+#!/bin/bash
+make clean
+make
+./test2 short shan 0 1 0 1
