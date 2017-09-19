@@ -1,0 +1,5 @@
+names: Yueen Ma, Bingzhao Shan
+UtorID: mayueen, shanbin1
+Revision number: 21
+
+Because we both implemented all of the first five functionalities independently to get a good understanding of how ext2 works, we have a different set of files for the bonus part. There are four files that are completely separate from the non-bonus files: ext2_rm_bonus.c, ext2_restore_bonus.c, util_bonus.c, util_bonus.h. i.e., ext2_utils.h and ext2_utils.c were not used for the bonus part at all. But for the non-bonus part, we did merge our implementations.

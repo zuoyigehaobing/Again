@@ -1,0 +1,36 @@
+CC=gcc
+CFLAGS=-Wall
+DEBUG=-g
+EXE=ext2_cp ext2_mkdir ext2_ln ext2_rm ext2_restore ext2_checker
+UTILS=ext2_utils.c ext2_utils.h ext2.h
+EXEBONUS=ext2_rm_bonus ext2_restore_bonus
+UTILBONUS=util_bonus.c util_bonus.h ext2.h
+
+all: $(EXE) $(EXEBONUS)
+
+ext2_checker : ext2_checker.c $(UTILS)
+	$(CC) $(CFLAGS) $(DEBUG) $^ -o $@	
+
+ext2_restore : ext2_restore.c $(UTILS)
+	$(CC) $(CFLAGS) $(DEBUG) $^ -o $@
+
+ext2_rm : ext2_rm.c $(UTILS)
+	$(CC) $(CFLAGS) $(DEBUG) $^ -o $@
+
+ext2_ln : ext2_ln.c $(UTILS)
+	$(CC) $(CFLAGS) $(DEBUG) $^ -o $@
+
+ext2_mkdir : ext2_mkdir.c $(UTILS)
+	$(CC) $(CFLAGS) $(DEBUG) $^ -o $@
+
+ext2_cp : ext2_cp.c $(UTILS)
+	$(CC) $(CFLAGS) $(DEBUG) $^ -o $@
+	
+ext2_rm_bonus : ext2_rm_bonus.c $(UTILBONUS)
+	$(CC) $(CFLAGS) $(DEBUG) $^ -o $@
+
+ext2_restore_bonus : ext2_restore_bonus.c $(UTILBONUS)
+	$(CC) $(CFLAGS) $(DEBUG) $^ -o $@
+
+clean : 
+	rm -f *.o $(EXE) $(EXEBONUS)

@@ -1,0 +1,15 @@
+Yueen Ma, Bingzhao Shan
+mayueen, shanbin1
+revision: 73
+Discussion:
+It is possible for starvation to happen, i.e. on some lanes, there is no limitation 
+of time for the cars to wait on passing the intersection.
+If there exists a lane where the cars in it keep acquiring some of 
+the intersection's quadrants, then cars from other lanes would be prevented 
+from entering the intersection. That is, the threads for those 
+lanes will all be blocked by the mutexes of the quadrants' because there 
+is one thread always keeps those mutexes. Then starvation 
+occurs. e.g. The north lane filled with cars want to move to south, and they always 
+succeed in acquiring Q2's and Q3's mutexes. Then if cars come from other 
+directions need Q2's and Q3's mutexes, the chances are that they would 
+never be able to cross the intersection.
