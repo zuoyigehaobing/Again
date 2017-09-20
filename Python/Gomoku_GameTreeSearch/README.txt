@@ -1,13 +1,14 @@
 Welcome to Gomoku!!!
 
-To start, run following code on terminal (works with python 2.7)
+To start the game, run following code in terminal (with python 2.7)
 
-    	python GUI.py
+    	python2 GUI.py
+	
+	
 
-On the menu:
-	Choose the option on the left to set the AI to 
+Once you started the game,choose the difficulty from the menu on the left:
 
-	Simple-1:  game tree search with depth 1, Player goes first
+	Simple-1:  game tree search with depth 1, Player goes first (Which is just heuristic search)
 	Simple-2:  game tree search with depth 1, AI goes first
 	Normal-1:  game tree search with depth 3(with alpha beta cut),
 	 	    Player goes first
@@ -19,8 +20,7 @@ On the menu:
 	## to return next state would be crazy long.
 
 
-click Quit to exit the game
-
+click Quit to exit the game, Enjoy!
 
 
 
