@@ -117,10 +117,6 @@ def horizontal_preference_Big(snowball,state):
         if left not in state.snowballs:
             rval -= 4
 
-    if snowball[0] < state.robot[0] and snowball[1] < state.robot[1]:
-        
-
-
     return rval
 
 def vertical_preference_Big(snowball,state):
@@ -435,5 +431,3 @@ if __name__ == "__main__":
   print("{} of {} problems ({} %) solved in less than {} seconds.".format(solved, counter, percent, timebound))
   print("Problems that remain unsolved in the set are Problems: {}".format(unsolved))
   print("*************************************")
-
-
